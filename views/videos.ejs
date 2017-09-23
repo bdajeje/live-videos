@@ -1,0 +1,9 @@
+<h1>Videos</h1>
+
+<% if(videos && videos.length > 0) { %>
+  <% videos.forEach(function(video, index) { %>
+    <div class="video-wrapper">
+      <a href="/videos/<%= video.name %>"><%= video.name %></a>
+    </div>
+  <% }) %>
+<% } %>
